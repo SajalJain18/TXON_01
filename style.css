@@ -4,11 +4,23 @@
     box-sizing: border-box; 
     font-family: sans-serif;
 }
-body{
+.h-text0{
     background-image: url(images/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+:root{
+	--bg-color: #020312;
+	--text-color: #fff;
+	--main-color: brown;
+	--second-color: gray;
+	--other-color: #12141c;
+	--h1-font: 5.2rem;
+	--h2-font: 3.5rem;
+	--p-font: 1.1rem;
+}
+
 nav{
     width: 100%;
     height: 70px;
@@ -77,6 +89,17 @@ span{
     padding: 10px 20px;
     border-radius: 8px;
 }
+
+#learn:hover{
+    color: black;
+    background: antiquewhite;
+}
+
+#courses:hover{
+    color: black;
+    background: antiquewhite;
+}
+
 footer{
     background-color: antiquewhite;
     color: #262626;
@@ -84,6 +107,72 @@ footer{
     text-align: center;
     height:5%;
     width: 100%;
+}
+
+.btn{
+	display: inline-block;
+	padding: 14px 40px;
+	border-radius: 0.5rem;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	border: 1px solid var(--main-color);
+	transition: all .40s ease;
+    text-decoration: none;
+}
+.btn:hover{
+	transform: scale(1.01) translateY(-5px);
+	background: brown;
+    color: antiquewhite;
+	border: 1px solid var(antiquewhite);
+}
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+}
+.about-text h4{
+	margin: 10px 0;
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.about-text h2{
+	font-size: var(--h2-font);
+}
+.about-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.about-gri{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 3rem;
+}
+.about-in h5{
+	font-size: 22px;
+	font-weight: 600;
+}
+.about-img img{
+	height: auto;
+	width: 100%;
+    padding-left: 2%;
+	max-width: 460px;
+}
+.foottext{
+    background-color: bisque;
+    color: black;
+    height: 20px;
+}
+.courses{
+    color: brown;
+    font-size: large;
 }
 
 @media (max-width: 980px){
@@ -94,7 +183,21 @@ footer{
     .menu a{
         padding: 0px 19px;
     }
-    body{
-        height: 97vh;
+    .h-text0{
+        height: 40vh;
+        width: 100%;
     }
+    .h-text p{
+        letter-spacing: 2px;
+    }
+    .about{
+		grid-template-columns: 1fr;
+	}
+	.about-img{
+		text-align: center;
+	}
+    section{
+		padding: 70px 3% 60px;
+	}
 }
+
