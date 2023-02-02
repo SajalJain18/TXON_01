@@ -1,0 +1,100 @@
+*{
+    padding: 0; 
+    margin:0; 
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+body{
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    padding: 0px 70px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.logo span{
+    color: brown;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+
+.menu a:hover{
+    background-color: brown;
+    color: White;
+    border-radius: 10px;
+}
+
+.h-text{
+    background-color: rgba(255, 255, 255, 0.482);
+    width: 100%;
+    height: 90vh;
+    position: flex;
+    text-align: center;
+    font-size: larger;
+    padding: 15%;
+
+}
+h1{
+    color: black;
+    font-family: 'Times New Roman', Times, cursive;
+}
+span{
+    color:brown;
+    font-family: 'Times New Roman', Times, cursive;
+}
+.h-text p{
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#courses{
+    text-decoration: none;
+    color: white;
+    background: brown;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+#learn{
+    text-decoration: none;
+    color: white;
+    background: #262626;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+footer{
+    background-color: antiquewhite;
+    color: #262626;
+    font-weight: bold;
+    text-align: center;
+    height:5%;
+    width: 100%;
+}
+
+@media (max-width: 980px){
+    .nav{
+        width: 100%;
+        height: 20%;
+    }
+    .menu a{
+        padding: 0px 19px;
+    }
+    body{
+        height: 97vh;
+    }
+}
